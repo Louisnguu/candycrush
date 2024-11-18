@@ -16,6 +16,12 @@ window.onload = function() {
         slideCandy();
         generateCandy();
     }, 100);
+    // Khi tạo bảng sẽ có thể tạo thành các hàng kẹo 3/4/5 
+    // Hàm gán score = 0 sau khi radom kẹo
+    setTimeout( () => {
+        score = 0;
+        document.getElementById("score").innerText = score;
+    },1500);
 }
 
 function randomCandy() {
